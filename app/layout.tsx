@@ -25,7 +25,9 @@ export default function RootLayout({
           <h1 style={{ margin: 0 }}>Awesome Axioms</h1>
           <DarkModeButton />
         </header>
-        {children}
+        <div className={styles.content}>
+          {children}
+        </div>
       </body>
     </html>
   );

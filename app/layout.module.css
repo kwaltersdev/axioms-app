@@ -5,3 +5,9 @@
   align-items: flex-end;
   justify-content: space-between;
 }
+
+.content {
+  max-width: 800px;
+  margin: auto;
+  padding: 32px;
+}
