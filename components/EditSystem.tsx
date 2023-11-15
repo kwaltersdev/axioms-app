@@ -110,6 +110,7 @@ export const EditSystem = () => {
 
       <FormGroup>
         {Object.keys(axiomsTheorums.axioms).map(key => <SystemInput
+          key={key}
           label="axiom"
           number={key}
           value={axiomsTheorums.axioms[key as '1']}
@@ -123,6 +124,7 @@ export const EditSystem = () => {
 
       <FormGroup>
         {Object.keys(axiomsTheorums.theorums).map(key => <SystemInput
+          key={key}
           label="theorum"
           number={key}
           value={axiomsTheorums.theorums[key as '1']}
