@@ -191,7 +191,7 @@ export const EditSystem = () => {
 
         <p>Please answer from the perspective of a {perspective === "other" ? perspectiveOther : perspective}.</p>
         <p>According to the above axiomatic system...</p>
-        <p>{question}</p>
+        <p>{question === "other" ? questionOther : question}</p>
 
       </div>
     </div>
