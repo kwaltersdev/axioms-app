@@ -10,7 +10,7 @@ body {
 }
 
 body.dark {
-  --default-color: #00FF00;
+  --default-color: #00BD03;
   --default-background-color: black;
 }
 
@@ -25,7 +25,7 @@ hr {
 button {
   border: 1px solid var(--default-color);
   background-color: var(--default-background-color);
-  font-family: var(--default-font-famliy);
+  font-family: var(--default-font-family);
   color: var(--default-color);
 
   font-size: 1rem;
@@ -41,6 +41,20 @@ select {
   padding: 4px;
 
   caret-color: var(--default-color);
+  border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus,
+input:focus-visible,
+textarea:focus,
+textarea:focus-visible,
+select:focus,
+select:focus-visible {
+  outline: 2px solid var(--default-color);
 }
 
 h1 {
@@ -49,4 +63,9 @@ h1 {
 
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.icon-button {
+  border: none;
+  padding: 2px;
 }

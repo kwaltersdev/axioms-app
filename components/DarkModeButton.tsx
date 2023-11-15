@@ -17,7 +17,7 @@ export const DarkModeButton = () => {
   };
 
   return (
-    <button onClick={handleClick} style={{ border: 'none' }}>
+    <button onClick={handleClick} className="icon-button">
       <span className="material-symbols-outlined">
         {darkMode ? "light_mode" : "dark_mode"}
       </span>
