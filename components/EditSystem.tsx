@@ -137,7 +137,7 @@ export const EditSystem = () => {
       <h2>Ask AI:</h2>
 
       <FormControl>
-        <label htmlFor="perspective">AI's perspective</label>
+        <label htmlFor="perspective">{"AI's perspective"}</label>
         <select id="perspective" onChange={e => setPerspective(e.target.value)} value={perspective}>
           {personaOptions.map(option => <option key={option}>{option}</option>)}
         </select>
