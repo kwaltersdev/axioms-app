@@ -10,8 +10,16 @@ body {
 }
 
 body.dark {
-  --default-color: white;
+  --default-color: #00FF00;
   --default-background-color: black;
+}
+
+hr {
+  height: 0px;
+  border-top: 1px solid var(--default-color);
+  border-bottom: none;
+  color: var(--default-color);
+  margin-bottom: 16px;
 }
 
 button {
@@ -27,6 +35,7 @@ button {
 input,
 textarea,
 select {
+  color: var(--default-color);
   background-color: var(--default-background-color);
   border: 1px solid var(--default-color);
   padding: 4px;

@@ -75,7 +75,7 @@ export const Axioms = () => {
       <Form>
         {Object.keys(axioms).map(key => {
           return (
-            <div key={key} style={{ display: 'flex', alignItems: 'flex-end', justifyContent: "space-between" }}>
+            <div key={key} style={{ display: 'flex', alignItems: 'flex-end', justifyContent: "space-between", gap: '4px' }}>
               {/* @ts-expect-error */}
               <AxiomInput number={key} value={axioms[key]} onChange={onAxiomChange(key)} style={{ flexGrow: 1 }} />
               {/* @ts-expect-error */}
@@ -93,7 +93,7 @@ export const Axioms = () => {
       <Form>
         {Object.keys(theorums).map(key => {
           return (
-            <div key={key} style={{ display: 'flex', alignItems: 'flex-end', justifyContent: "space-between" }}>
+            <div key={key} style={{ display: 'flex', alignItems: 'flex-end', justifyContent: "space-between", gap: '4px' }}>
               {/* @ts-expect-error */}
               <AxiomInput number={key} value={theorums[key]} onChange={onTheorumChange(key)} style={{ flexGrow: 1 }} />
               {/* @ts-expect-error */}
